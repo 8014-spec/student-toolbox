@@ -1,60 +1,15 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Toolbox</title>
-  <meta name="description" content="Centre de commande personnel pour les études, la recherche et la création." />
-  <link rel="stylesheet" href="style.css" />
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Student Toolbox — Centre de commande</title><meta name="description" content="Base personnelle d'outils pour apprendre, rechercher, créer et s'organiser."><link rel="stylesheet" href="style.css"></head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top"><span class="brand-mark">ST</span><span>Student Toolbox</span></a>
-    <nav>
-      <a href="#missions">Je dois…</a><a href="#tools">Outils</a><a href="#subjects">Matières</a><a href="#ai">IA</a><a href="#research">Recherche</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="eyebrow">PERSONAL ACADEMIC TOOLKIT</div>
-      <h1>Tu as un problème.<br><em>Choisis le bon outil.</em></h1>
-      <p>Un tableau de bord personnel pour apprendre, rechercher, créer et organiser ton travail sans te perdre dans une collection d'applications.</p>
-      <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Chercher un outil, une matière ou une tâche…" /></div>
-      <div class="quick"><button data-task="comprendre">Comprendre un concept</button><button data-task="reviser">Réviser</button><button data-task="rechercher">Faire une recherche</button><button data-task="presenter">Faire une présentation</button><button data-task="organiser">M'organiser</button></div>
-    </section>
-
-    <section id="missions" class="section">
-      <div class="section-head"><div><span class="kicker">01 / ACTION</span><h2>Je dois…</h2></div><p>Commence par ton objectif, pas par l'application.</p></div>
-      <div id="task-grid" class="task-grid"></div>
-    </section>
-
-    <section id="tools" class="section alt">
-      <div class="section-head"><div><span class="kicker">02 / DATABASE</span><h2>Mes outils</h2></div><p>Filtre la boîte à outils selon ton besoin réel.</p></div>
-      <div class="filters"><select id="subjectFilter"><option value="">Toutes les matières</option></select><select id="functionFilter"><option value="">Toutes les fonctions</option></select><select id="typeFilter"><option value="">Tous les types</option></select><select id="levelFilter"><option value="">Tous les usages IA</option><option value="learn">🟢 Apprendre</option><option value="assist">🟡 Assister</option><option value="automate">🟠 Automatiser</option><option value="replace">🔴 Remplacer</option></select></div>
-      <div id="tool-grid" class="tool-grid"></div>
-    </section>
-
-    <section id="subjects" class="section">
-      <div class="section-head"><div><span class="kicker">03 / SUBJECTS</span><h2>Matières</h2></div><p>Chaque matière devient une boîte à outils.</p></div>
-      <div id="subject-grid" class="subject-grid"></div>
-    </section>
-
-    <section id="ai" class="section dark">
-      <div class="section-head"><div><span class="kicker">04 / ARTIFICIAL INTELLIGENCE</span><h2>IA : apprendre ≠ déléguer</h2></div><p>Le niveau d'automatisation indique ce que tu risques de ne plus apprendre.</p></div>
-      <div class="ai-grid"><div><b>🟢 APPRENDRE</b><p>Comprendre, questionner, s'entraîner, recevoir du feedback.</p></div><div><b>🟡 ASSISTER</b><p>Structurer ou améliorer sans abandonner ton raisonnement.</p></div><div><b>🟠 AUTOMATISER</b><p>Déléguer une partie du travail répétitif ou technique.</p></div><div><b>🔴 REMPLACER</b><p>Faire produire le travail à ta place. À éviter quand la compétence est précisément l'objectif.</p></div></div>
-    </section>
-
-    <section id="research" class="section">
-      <div class="section-head"><div><span class="kicker">05 / RESEARCH</span><h2>Recherche académique</h2></div><p>Une hiérarchie de sources plutôt qu'une recherche Google sans méthode.</p></div>
-      <div class="research-grid"><article><span>01</span><h3>Trouver</h3><p>Google Scholar · OpenAlex · DOAJ</p></article><article><span>02</span><h3>Comprendre</h3><p>Stanford Encyclopedia of Philosophy · ressources institutionnelles</p></article><article><span>03</span><h3>Organiser</h3><p>Zotero · OneDrive · OneNote</p></article><article><span>04</span><h3>Vérifier</h3><p>Source primaire · auteur · date · citations croisées</p></article></div>
-    </section>
-
-    <section class="section compact"><div class="section-head"><div><span class="kicker">06 / SCHOOL</span><h2>Ressources CIMF</h2></div><p>Les outils fournis par l'école sont identifiés séparément des outils personnels.</p></div><div class="school-box"><strong>CIMF → Microsoft 365</strong><span>Word · PowerPoint · Excel · OneNote · Teams · Forms · OneDrive</span><strong>CIMF → Pronote</strong><span>Emploi du temps · devoirs · notes · informations scolaires</span></div></section>
-
-    <section class="section compact"><div class="section-head"><div><span class="kicker">07 / HARDWARE</span><h2>Mon matériel</h2></div><p>Les outils logiciels doivent rester reliés à ce que tu peux réellement utiliser.</p></div><div class="hardware"><span>Ordinateur</span><span>Téléphone</span><span>Casque</span><span>Microphone</span><span>Interface audio</span><span>Instruments</span><span>Imprimante</span></div></section>
-  </main>
-  <footer><span>STUDENT TOOLBOX</span><span>Personal knowledge & study system</span></footer>
-  <script src="app.js"></script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#top"><span class="brand-mark">ST</span><span>Student Toolbox</span></a><nav><a href="#missions">Je dois…</a><a href="#tools">Outils</a><a href="#subjects">Matières</a><a href="#research">Recherche</a><a href="#ai">IA</a><button id="favNav" class="nav-fav">☆ <span id="favCount">0</span></button></nav></header>
+<main id="top">
+<section class="hero"><div class="eyebrow">PERSONAL ACADEMIC OPERATING SYSTEM</div><h1>Travaille moins<br><em>au hasard.</em></h1><p>Ton centre de commande pour choisir le bon outil, apprendre réellement et garder tes ressources sous contrôle.</p><div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Chercher un outil, une matière, une tâche…" autocomplete="off"><kbd>CTRL K</kbd></div><div class="quick"><button data-task="comprendre">Comprendre</button><button data-task="reviser">Réviser</button><button data-task="rechercher">Rechercher</button><button data-task="presenter">Présenter</button><button data-task="organiser">Organiser</button></div></section>
+<section id="missions" class="section"><div class="section-head"><div><span class="kicker">01 / ACTION</span><h2>Je dois…</h2></div><p>Pars de la tâche. Le système choisit ensuite les outils.</p></div><div id="task-grid" class="task-grid"></div></section>
+<section id="tools" class="section alt"><div class="section-head"><div><span class="kicker">02 / DATABASE</span><h2>Outils</h2></div><p><span id="resultCount">0</span> résultats · favoris conservés dans ton navigateur.</p></div><div class="advanced"><div class="filters"><select id="subjectFilter"><option value="">Toutes les matières</option></select><select id="functionFilter"><option value="">Toutes les fonctions</option></select><select id="typeFilter"><option value="">Tous les types</option></select><select id="levelFilter"><option value="">Tous les usages</option><option value="learn">🟢 Apprendre</option><option value="assist">🟡 Assister</option><option value="automate">🟠 Automatiser</option><option value="replace">🔴 Remplacer</option></select><select id="accessFilter"><option value="">Tous les accès</option><option value="École">CIMF / école</option><option value="Personnel">Personnel</option><option value="Déjà acheté">Déjà acheté</option></select></div><label class="check"><input id="favOnly" type="checkbox"> Mes favoris</label></div><div id="tool-grid" class="tool-grid"></div></section>
+<section id="subjects" class="section"><div class="section-head"><div><span class="kicker">03 / SUBJECTS</span><h2>Matières</h2></div><p>Ouvre une matière pour filtrer instantanément ta boîte à outils.</p></div><div id="subject-grid" class="subject-grid"></div></section>
+<section id="research" class="section"><div class="section-head"><div><span class="kicker">04 / RESEARCH</span><h2>Recherche académique</h2></div><p>La recherche sérieuse suit une chaîne : trouver → comprendre → organiser → vérifier → citer.</p></div><div class="research-grid"><article><span>01</span><h3>Trouver</h3><p>Google Scholar · OpenAlex · DOAJ · catalogues de bibliothèques</p></article><article><span>02</span><h3>Comprendre</h3><p>Stanford Encyclopedia of Philosophy · sources institutionnelles · ouvrages</p></article><article><span>03</span><h3>Organiser</h3><p>Zotero · OneNote · OneDrive · dossiers par projet</p></article><article><span>04</span><h3>Vérifier</h3><p>Source primaire · auteur · date · citations croisées · contexte</p></article></div></section>
+<section id="ai" class="section dark"><div class="section-head"><div><span class="kicker">05 / AI</span><h2>IA : apprendre ≠ déléguer</h2></div><p>Le niveau rouge n'est pas « interdit » : il signale un risque pédagogique.</p></div><div class="ai-grid"><div><b>🟢 APPRENDRE</b><p>Explications, questions, exercices, feedback et contre-arguments.</p></div><div><b>🟡 ASSISTER</b><p>Structurer, reformuler, corriger ou améliorer tout en gardant le raisonnement.</p></div><div><b>🟠 AUTOMATISER</b><p>Déléguer des tâches répétitives, techniques ou préparatoires.</p></div><div><b>🔴 REMPLACER</b><p>Faire produire le travail évalué à ta place. Mauvais choix lorsque la compétence est l'objectif.</p></div></div></section>
+<section class="section compact"><div class="section-head"><div><span class="kicker">06 / SCHOOL</span><h2>Ressources CIMF</h2></div><p>Les ressources scolaires restent identifiables comme telles.</p></div><div class="school-box"><strong>CIMF → Microsoft 365</strong><span>Word · PowerPoint · Excel · OneNote · Teams · Forms · OneDrive</span><strong>CIMF → Pronote</strong><span>Emploi du temps · devoirs · notes · informations scolaires</span></div></section>
+<section class="section compact"><div class="section-head"><div><span class="kicker">07 / HARDWARE</span><h2>Matériel</h2></div><p>Le logiciel doit correspondre à ce que tu peux réellement utiliser.</p></div><div class="hardware"><span>Ordinateur</span><span>Téléphone</span><span>Casque</span><span>Microphone</span><span>Interface audio</span><span>Instruments</span><span>Imprimante</span></div></section>
+</main><div id="modal" class="modal" aria-hidden="true"><div class="modal-card"><button id="modalClose" class="close">×</button><div id="modalBody"></div></div></div><footer><span>STUDENT TOOLBOX / v2</span><span>Local-first · favoris dans ce navigateur</span></footer><script src="app.js"></script></body></html>
